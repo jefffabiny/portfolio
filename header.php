@@ -10,6 +10,7 @@
 
 	<title>Title</title>
 	<link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory');?>/reset.css" rel="stylesheet">
 	<?php wp_head();?>
 </head>
 
