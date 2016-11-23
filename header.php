@@ -11,23 +11,23 @@
 	<title>Title</title>
 	<link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
 	<link href="<?php bloginfo('template_directory');?>/reset.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory');?>/site.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<?php wp_head();?>
 </head>
 
 <body>
-
-	<div class="blog-masthead">
-		<div class="container">
-			<nav class="blog-nav">
-				<a class="blog-nav-item active" href="#">Home</a>
-				<?php wp_list_pages( '&title_li=' ); ?>
-			</nav>
-		</div>
-	</div>
 	
 	<div class="container">
 
 		<div class="blog-header">
-			<h1 class="blog-title"><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+			<h1 class="blog-title"><shim></shim><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+
+			<nav class="global-nav">
+				<li><a class="global-nav-item" href="/">Home</a></li>
+				<?php wp_list_pages( '&title_li=' ); ?>
+			</nav>
+
 			<p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
 		</div>
